@@ -11,22 +11,28 @@
         text-align: center;
     }
 
-    img {
+    model-viewer {
         width: 100%;
-        max-width: 360px;
+        height: 600px;
+    }
+    .ar {
+        text-align: center;
     }
     </style>
     <title>イチマンAR</title>
 </head>
 <body>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <main>
         <div>
             <h2>イチマンAR</h2>
         </div>
-        <div>
-        <a href="./images/ichiman.usdz" rel="ar" ><img src="./images/thumbnail.png" alt="イチマンAR"></a>
-        <p>※iOS12以上、safariのみ利用可</p>
-    </div>
+        <div class="ar">
+            <model-viewer src="images/ichiman.glb" ios-src="images/ichiman.usdz" alt="イチマン" auto-rotate camera-controls background-color="#000" quick-look-browsers="safari chrome" ar></model-viewer>
+            <!-- <a href="./images/ichiman.usdz" rel="ar" ><img src="./images/thumbnail.png" alt="イチマンAR"></a> --> -->
+            <p>※iOS12以上、safariのみ利用可</p>
+        </div>
     </main>
 </body>
 </html>
