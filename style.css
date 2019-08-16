@@ -30,7 +30,6 @@ model-viewer {
     height: 450px;
     max-width: 700px;
     outline: none;
-
 }
 
 
@@ -64,7 +63,6 @@ model-viewer {
 }
 
 .ar__model {
-    width: 100%;
     margin-bottom: 40px;
 }
 
@@ -140,5 +138,10 @@ footer {
     .logo {
         width: 90%;
         margin: 60px auto;
+    }
+
+    model-viewer {
+        height: 375px;
+        outline: none;
     }
 }
