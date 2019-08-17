@@ -10,9 +10,7 @@ html {
     background: #fc0037;
 }
 
-a {
-    color: #fff;
-}
+
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
@@ -47,8 +45,7 @@ model-viewer {
 
 .logo_mini {
     max-width: 240px;
-    margin: 60px auto;
-
+    margin: 30px auto 40px;
 }
 
 .desc {
@@ -74,7 +71,7 @@ model-viewer {
 
 .ar__model {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .ar__model__reveal {
@@ -106,6 +103,7 @@ model-viewer {
 
 .ar__model__reveal__text {
     width: 100%;
+    color: rgb(139, 139, 139);
 }
 
 
@@ -116,8 +114,9 @@ model-viewer {
 }
 
 .ar__other h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 12px;
 }
 
 .ar__other__models {
@@ -138,6 +137,11 @@ model-viewer {
     font-size: 14px;
     margin: 0 auto;
     max-width: 700px;
+    color: rgb(139, 139, 139);
+}
+
+.guide a {
+    color: rgb(139, 139, 139);
 }
 
 .guide img {
@@ -161,7 +165,7 @@ model-viewer {
 
 
 .guide__attention {
-    margin: 50px 16px;
+    margin: 20px 16px 50px;
     text-align: left;
     font-size: 1.2rem;
 }
@@ -176,6 +180,7 @@ model-viewer {
 .guide__about h2 {
     font-size: 2.4rem;
     margin-bottom: 0px;
+    font-weight: 400;
 }
 
 .guide__about img {
@@ -197,6 +202,10 @@ footer {
     text-align: center;
     font-size: 1.4rem;
     margin-bottom: 20px;
+}
+
+footer a {
+    color: #fff;
 }
 
 @media screen and (max-width: 720px) {
