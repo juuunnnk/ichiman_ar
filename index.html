@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>イチマンAR</title>
     <meta name="description" content="マッハバイトのヒーロー、イチマンの3Dモデルを使ったARコンテンツです。">
     <meta property="og:title" content="イチマンAR">
@@ -24,21 +24,26 @@
             <p>マッハバイトの<span>正体不明のヒーロー、</span><span>イチマン</span>を<span>現実世界</span>に呼び出そう。</p>
         </div>
         <div class="guide">
-            <p class="guide__tap"><img src="./images/ar_icon.png" alt="ARアイコン">マークをタップしてください。</p>
-
+            <p class="guide__tap">スマホの方は<img src="./images/ar_icon.png" alt="ARアイコン">マークをタップしてください。</p>
         </div>
         <div class="ar">
-            <model-viewer poster="images/poster.png" auto-rotate camera-controls background-color="#191919"
-                src="images/ichiman.glb" ios-src="images/ichiman.usdz" alt="イチマン" ar>
-            </model-viewer>
+            <div class="ar__model ar__model__reveal">
+                <model-viewer preload poster="images/poster.png" auto-rotate camera-controls
+                            background-color="#191919" src="images/ichiman.glb" ios-src="images/ichiman.usdz"
+                            alt="イチマン" ar>
+                </model-viewer>
+                <div class="ar__model__reveal__title">
+                    <h3>走るイチマン</h3>
+                    <p>running_ichiman</p>
+                </div>
+            </div>
             <div class="ar__other">
                 <h3>他のイチマンをみる</h3>
                 <div class="ar__other__models">
-                    <div class="ar__other__model"><a href="./sleep.html"><img src="./images/thumb_sleep.png" alt=""></a>
+                    <div class="ar__other__model"><a href="./sleep.html"><img src="./images/thumb_sleep.png" alt="寝るイチマン"></a>
                     </div>
-                    <div class="ar__other__model"><a href="./sleep.html"><img src="./images/thumb_sleep.png" alt=""></a>
+                    <div class="ar__other__model"><a href="./sleep.html"><img src="./images/thumb_sleep.png" alt="寝るイチマン"></a>
                     </div>
-                </div>
             </div>
         </div>
         <div class="guide">

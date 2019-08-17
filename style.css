@@ -6,6 +6,10 @@ html {
     line-height: 1.75;
 }
 
+::selection {
+    background: #fc0037;
+}
+
 a {
     color: #fff;
 }
@@ -25,13 +29,9 @@ main {
 }
 
 model-viewer {
-    margin: 0 auto;
     width: 100%;
     height: 375px;
-    max-width: 700px;
     outline: none;
-    margin-bottom: 40px;
-
 }
 
 
@@ -43,6 +43,12 @@ model-viewer {
 
 .logo img {
     width: 100%;
+}
+
+.logo_mini {
+    max-width: 240px;
+    margin: 60px auto;
+
 }
 
 .desc {
@@ -61,21 +67,44 @@ model-viewer {
 }
 
 .ar {
+    margin: 0 auto;
     text-align: center;
+    max-width: 700px;
 }
 
-
-
+.ar__model {
+    margin-bottom: 40px;
+}
 
 .ar__model__reveal {
     position: relative;
 }
 
 
-.ar__model__reveal__text {
+.ar__model__reveal__title {
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.ar__model__reveal__title h3 {
+    font-style: italic;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.ar__model__reveal__title p {
+    font-style: italic;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+
+.ar__model__reveal__text {
+    width: 100%;
 }
 
 
@@ -121,6 +150,10 @@ model-viewer {
 }
 
 
+.guide__tap img{
+    margin-left: 8px;
+}
+
 .guide__attention p {
     margin: 6px;
 }
@@ -131,7 +164,6 @@ model-viewer {
     text-align: left;
     font-size: 1.2rem;
 }
-
 
 
 .guide__about {
@@ -175,6 +207,8 @@ footer {
         margin-right: 10px;
         margin-left: 10px; 
 
-    }    
-
+    } 
+    .ar__other__model {
+        margin: 0 5px;
+    }
 }
