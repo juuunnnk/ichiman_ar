@@ -30,6 +30,8 @@ model-viewer {
     height: 375px;
     max-width: 700px;
     outline: none;
+    margin-bottom: 40px;
+
 }
 
 
@@ -62,9 +64,7 @@ model-viewer {
     text-align: center;
 }
 
-.ar__model {
-    margin-bottom: 40px;
-}
+
 
 
 .ar__model__reveal {
@@ -81,10 +81,13 @@ model-viewer {
 
 .ar__other {
     width: 100%;
-    max-width: 700px;
+    max-width: 720px;
     margin: 0 auto;
-    /* background: rgba(255, 255, 255, 0.226); */
+}
 
+.ar__other h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .ar__other__models {
@@ -142,8 +145,12 @@ model-viewer {
     margin-bottom: 0px;
 }
 
+.guide__about img {
+    vertical-align: -4px;
+}
+
 .guide__about p {
-    margin: 6px;
+    margin: 6px 0;
 }
 
 hr {
@@ -155,6 +162,8 @@ hr {
 footer {
     width: 100%;
     text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 720px) {
@@ -162,5 +171,10 @@ footer {
         width: 90%;
         margin: 60px auto;
     }
+    .ar__other__models {
+        margin-right: 10px;
+        margin-left: 10px; 
+
+    }    
 
 }
