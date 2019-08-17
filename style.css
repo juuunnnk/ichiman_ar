@@ -50,13 +50,13 @@ model-viewer {
 
 .desc {
     text-align: center;
+    font-style: italic;
     margin: 0 16px 50px;
 }
 
 .desc p {
-    font-size: 1.75rem;
+    font-size: 2.0rem;
     font-weight: 700;
-
 }
 
 .desc span {
