@@ -73,6 +73,7 @@ model-viewer {
 }
 
 .ar__model {
+    width: 100%;
     margin-bottom: 40px;
 }
 
