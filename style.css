@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese");
 
 html {
     font-size: 62.5%;
@@ -9,8 +9,6 @@ html {
 ::selection {
     background: #fc0037;
 }
-
-
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
@@ -25,13 +23,6 @@ main {
     width: 100%;
     text-align: center;
 }
-
-model-viewer {
-    width: 100%;
-    height: 375px;
-    outline: none;
-}
-
 
 .logo {
     /* width: 55%; */
@@ -64,20 +55,27 @@ model-viewer {
 }
 
 .ar {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    max-width: 700px;
 }
 
 .ar__model {
+    margin: 0 auto;
     width: 100%;
+    max-width: 700px;
     margin-bottom: 50px;
 }
+
+/* .ar__model model-viewer {
+    width: 100%;
+    height: 100%;
+    outline: none;
+} */
 
 .ar__model__reveal {
     position: relative;
 }
-
 
 .ar__model__reveal__title {
     width: 100%;
@@ -100,12 +98,10 @@ model-viewer {
     font-size: 12px;
 }
 
-
 .ar__model__reveal__text {
     width: 100%;
     color: rgb(139, 139, 139);
 }
-
 
 .ar__other {
     width: 100%;
@@ -132,7 +128,6 @@ model-viewer {
     width: 100%;
 }
 
-
 .guide {
     font-size: 14px;
     margin: 0 auto;
@@ -154,8 +149,7 @@ model-viewer {
     margin-top: 14px;
 }
 
-
-.guide__tap img{
+.guide__tap img {
     margin-left: 8px;
 }
 
@@ -163,17 +157,14 @@ model-viewer {
     margin: 6px;
 }
 
-
 .guide__attention {
     margin: 20px 16px 50px;
     text-align: left;
     font-size: 1.2rem;
 }
 
-
 .guide__about {
     margin: 50px 16px 120px;
-    ;
     text-align: left;
 }
 
@@ -219,6 +210,7 @@ footer a {
     .desc {
         margin-bottom: 50px;
     }
+
     .desc p {
         font-size: 1.75rem;
         margin-top: 0;
@@ -226,10 +218,15 @@ footer a {
 
     .ar__other__models {
         margin-right: 10px;
-        margin-left: 10px; 
+        margin-left: 10px;
+    }
 
-    } 
     .ar__other__model {
         margin: 0 5px;
     }
 }
+
+/* :host {
+    width: 100%;
+    height: 100%;
+} */
