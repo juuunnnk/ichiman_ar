@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <main>
@@ -42,7 +43,7 @@
             <div class="ar__model">
                 <model-viewer preload poster="images/poster_hand.png" auto-rotate camera-controls
                     background-color="#191919" src="images/hand_ichiman.glb" ios-src="images/hand_ichiman.usdz"
-                    alt="イチマン" ar style="width:100%;max-width:700px;height:375px;">
+                    alt="イチマン" ar>
                 </model-viewer>
                 <div class="ar__model__title">
                     <h3>渡すイチマン</h3>
