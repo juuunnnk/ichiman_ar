@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <main>
@@ -41,12 +42,11 @@
             <p class="guide__tap">スマホの方は<img src="./images/ar_icon.png" alt="ARアイコン">マークをタップしてください。</p>
         </div>
         <div class="ar">
-            <div class="ar__model ar__model__reveal">
-                <model-viewer preload poster="images/poster.png" auto-rotate camera-controls background-color="#191919"
-                    src="images/ichiman.glb" ios-src="images/ichiman.usdz" alt="イチマン" ar
-                    style="width:100%;max-width:700px;height:375px;">
+            <div class="ar__model">
+                <model-viewer id="model-viewer" preload poster="images/poster.png" auto-rotate camera-controls
+                    background-color="#191919" src="images/ichiman.glb" ios-src="images/ichiman.usdz" alt="イチマン" ar>
                 </model-viewer>
-                <div class="ar__model__reveal__title">
+                <div class=" ar__model__title">
                     <h3>走るイチマン</h3>
                     <p>running_ichiman</p>
                 </div>
